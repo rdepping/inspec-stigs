@@ -9,7 +9,7 @@ Vagrant.configure(2) do |config|
 
     if [ ! -e /vagrant/inspec.rpm ]; then
       sudo yum install -y wget
-      wget -q -O /vagrant/inspec.rpm https://packages.chef.io/stable/el/6/inspec-1.0.0-1.el6.x86_64.rpm
+      wget -q -O /vagrant/inspec.rpm https://packages.chef.io/files/stable/inspec/1.7.1/el/6/inspec-1.7.1-1.el6.x86_64.rpm 
      fi
       sudo rpm -i /vagrant/inspec.rpm || echo .
   SHELL
